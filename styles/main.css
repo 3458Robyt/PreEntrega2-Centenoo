@@ -1,0 +1,381 @@
+/*Estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+/*Menu principal*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+    background-color: white;
+    
+
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+header ul li{
+    list-style: none;
+    transition: all .3s ease;
+}
+
+header ul li:hover{
+    transform: scale(1.4);
+    background-color: rgb(195, 195, 195);
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 11vh;
+    font-size: 4.5mm;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+    
+
+}
+/* Propiedades del nombre*/
+
+header .logo{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12mm;
+    letter-spacing: 1px;
+    transition: 1.5s;
+    text-align: left;
+}
+
+/* Grid de imagenes index*/
+
+
+.container-imagenes{
+    height: 100px;
+    margin: 25px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+
+/*Propiedad de las imagenes*/
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*Propiedades login y register*/
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  
+  button[type="submit"] {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgba(128, 128, 128, 0.756);
+ 
+  }
+  .user-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #ccc;
+    overflow: hidden;
+  }
+  
+  .user-icon img {
+    width: 100%;
+  }
+.user-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.user-icon img {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+/*Contact us*/
+.contact{ 
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.contact h2{
+    font-size: 35px;
+    color: gray;
+}
+.contact h3, h4{
+    font-size: 20px;
+    color: gray;
+}
+
+/*mapa*/
+.map {
+    width: 600px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 35px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: #8e8b8b 0 6px 15px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+  
+
+
+/*About us*/
+.about{
+    margin-top: 120px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+
+
+.about section div div h1{
+    font-size: 100px;
+    letter-spacing: 5px;
+
+}
+
+.about img{
+    height: 340px;
+    width: auto;
+    float: right;
+    margin-top: 120px;
+    margin-right: 70px;
+}
+
+.about-text{
+    width: 600px;
+}
+
+
+.loginbody{
+    background-color: #ffffff;
+}
+.background{
+    width: 530px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        to right,
+        #3e60af,
+        #9b9ea0
+    );
+    left: -90px;
+    top: -50px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #756966,
+        #d48e8e
+    );
+    right: -50px;
+    bottom: -80px;
+}
+.logincss{
+    height: 450px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    padding: 50px 35px;
+}
+
+.signincss{
+    height: 550px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    padding: 50px 35px;
+}
+
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #000000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(92, 87, 87, 0.07);
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #b6b6b6;
+}
+.loginn{
+    margin-top: 50px;
+    width: 105%;
+    background-color: #9c9a9a;
+    color: #2b2935;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+
+.social{
+  margin-top: 40px;
+  display: flex;
+  
+}
+.go{
+    margin-left: 10px;
+    
+}
+
+.social div{
+  background: color#9c9a9a;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(80, 67, 67, 0.55);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgb(73, 72, 72);
+}
+.social .fb{
+  margin-left: 20vh;
+  margin-right: 2px;
+  
+}
+.social i{
+  margin-right: 2vh;
+  
+}
+
+.rounded-button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+  }
+  
+  .go-login {
+    background-color: #4285f4;
+    color: white;
+  }
+  
+  .fb-login {
+    background-color: #3b5998;
+    color: white;
+  }
+  
+  .social-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .social-login p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
