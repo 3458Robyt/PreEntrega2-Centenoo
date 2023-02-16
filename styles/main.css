@@ -78,11 +78,24 @@ header .logo{
     height: 100px;
     margin: 25px;
     display: grid;
-    gap: 20px;
+    gap: 1rem;
     grid-template-columns:repeat(2, 1fr);
     grid-template-rows: 1fr 1fr;
 }
 
+/* Mq celular */
+@media (max-width: 800px) and (min-width: 200px) {
+
+/* Grilla menu principal */
+  .container-imagenes{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .map{
+    width: 300px;
+    
+  }
+}
 
 /*Propiedad de las imagenes*/
 
@@ -92,37 +105,6 @@ img{
     object-fit: cover;
 }
 
-
-/*Propiedades login y register*/
-  
-  /* form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-
-  
-  button[type="submit"] {
-    background-color: gray;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: rgba(128, 128, 128, 0.756);
- 
-  }
-  .user-icon {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    border-radius: 50%;
-    background-color: #ccc;
-    overflow: hidden;
-  } */
 
 
 /*Contact us*/
@@ -142,7 +124,7 @@ img{
 
 /*mapa*/
 .map {
-    width: 600px;
+    width: 75vw;
     height: 250px;
     margin: 0 auto;
     margin-top: 35px;
@@ -160,33 +142,71 @@ img{
 
 /*About us*/
 .about{
-    margin-top: 120px;
-    margin-left: 50px;
-    box-sizing: border-box;
     width: 100%;
-    
+    height: 100vh;  
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .content img{
+  height: auto;
+  width: 600px;
+  max-width: 100%;
+}
+.text{
+  width: 550px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+.content{
+  width: 1280px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.text h1{
+  color: black;
+  font-size: 85px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.text h5{
+  color: gray;
+  font-size: 25px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.text p{
+  color: rgba(137, 137, 137, 0.847);
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 45px;
 }
 
-
-.about section div div h1{
-    font-size: 100px;
-    letter-spacing: 5px;
-
+@media screen and (max-width: 1180px) {
+  .about{
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+  }
 }
 
-.about img{
-    height: 340px;
-    width: auto;
-    float: right;
-    margin-top: 120px;
-    margin-right: 70px;
-}
-
-.about-text{
-    width: 600px;
-}
-
-
+@media screen and (max-width: 650px) {
+  .about .content img{
+    margin-bottom: 35px;
+  }
+  .text h1{
+    font-size: 60px;
+    margin-bottom: 25px;
+  }
+} 
+  
 
 
 
@@ -207,9 +227,7 @@ input{
     font-size: 14px;
     font-weight: 300;
 }
-::placeholder{
-    color: #b6b6b6;
-}
+
 .loginn{
     margin-top: 50px;
     width: 105%;
@@ -298,6 +316,8 @@ input{
   .navbar-nav .nav-link:hover {
     color: #555;
   } */
+
+  /* Estilos de Sign y Log In */
 .container{
   padding-top:4.2rem;
   padding-bottom:4.2rem;
@@ -375,4 +395,7 @@ max-width: 500px;
 
      .form-group{
       padding: 1vh;
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 2px;
      }
+  
