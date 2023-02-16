@@ -20,12 +20,6 @@ header{
     
 
 }
-/* 
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 header ul{
     position: relative;
@@ -207,115 +201,6 @@ img{
   }
 } 
   
-
-
-
-/* label{
-    display: block;
-    margin-top: 30px;
-    font-size: 16px;
-    font-weight: 500;
-}
-input{
-    display: block;
-    height: 50px;
-    width: 100%;
-    background-color: rgba(92, 87, 87, 0.07);
-    border-radius: 5px;
-    padding: 0 10px;
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.loginn{
-    margin-top: 50px;
-    width: 105%;
-    background-color: #9c9a9a;
-    color: #2b2935;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
-    justify-content: center;
-}
-
-
-.social{
-  margin-top: 40px;
-  display: flex;
-  
-}
-.go{
-    margin-left: 10px;
-    
-}
-
-.social div{
-  background: color#9c9a9a;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(80, 67, 67, 0.55);
-  color: #eaf0fb;
-  text-align: center;
-}
-.social div:hover{
-  background-color: rgb(73, 72, 72);
-}
-.social .fb{
-  margin-left: 20vh;
-  margin-right: 2px;
-  
-}
-.social i{
-  margin-right: 2vh;
-  
-}
-
-.rounded-button {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ccc;
-  }
-  
-  .go-login {
-    background-color: #4285f4;
-    color: white;
-  }
-  
-  .fb-login {
-    background-color: #3b5998;
-    color: white;
-  }
-  
-  .social-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .social-login p {
-    margin-top: 5px;
-    font-size: 14px;
-  }
-  .navbar-nav {
-    margin: 0 auto;
-  }
-  
-  .navbar-nav .nav-link {
-    color: #333;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #555;
-  } */
 
   /* Estilos de Sign y Log In */
 .container{
