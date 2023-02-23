@@ -1,2 +1,31 @@
-h1 {
-  color: red; }
+/*Comentario en sass y css*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.7s;
+  padding: 30px 20px;
+  z-index: 10;
+  background-color: white; }
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header ul li {
+      list-style: none;
+      transition: all .3s ease; }
+      header ul li :hover {
+        transform: scale(1.4); }
+      header ul li a {
+        position: relative;
+        margin: 0 11vh;
+        font-size: 4.5mm;
+        text-decoration: none;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 600;
+        transition: 0.7s; }

@@ -284,3 +284,13 @@ max-width: 500px;
       letter-spacing: 2px;
      }
   
+     .footer{
+      background: rgb(255, 255, 255);
+      height: 30px;
+      border-top: 2px solid rgb(255, 255, 255);  
+      /*  poner footer abajo */
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+  }

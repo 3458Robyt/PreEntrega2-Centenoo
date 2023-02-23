@@ -1,3 +1,45 @@
-h1{
-    color: red;
+// Linea de comentario
+/*Comentario en sass y css*/
+
+// nesting
+// Estilos generales del header
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+    background-color: white;
+
+    ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            list-style: none;
+            transition: all .3s ease;
+
+            :hover{
+                transform: scale(1.4);
+
+            }
+            a{
+                position: relative;
+                margin: 0 11vh;
+                font-size: 4.5mm;
+                text-decoration: none;
+                color: black;
+                letter-spacing: 2px;
+                font-weight: 600;
+                transition: 0.7s;
+            }
+        }
+    }
+// 
 }
