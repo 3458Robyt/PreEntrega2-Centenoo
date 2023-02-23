@@ -29,3 +29,12 @@ header {
         letter-spacing: 2px;
         font-weight: 600;
         transition: 0.7s; }
+
+.footer {
+  background: white;
+  height: 30px;
+  border-top: 2px solid white;
+  position: fixed;
+  left: 0p;
+  bottom: 0;
+  width: 100%; }
