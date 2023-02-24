@@ -121,3 +121,16 @@ img{
           }
     } 
     }
+/*mq celular*/
+@media (max-width: 800px) and (min-width: 200px) {
+
+    /* Grilla menu principal */
+      .container-imagenes{
+        grid-template-columns: repeat(1, 1fr);
+      }
+    
+      .map{
+        width: 300px;
+        
+      }
+    }

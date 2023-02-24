@@ -1,4 +1,9 @@
 /* Grilla menu principal */
 .container-imagenes{
-    grid-template-columns: repeat(1,1fr);
+    height: 100px;
+    margin: 25px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
 }
