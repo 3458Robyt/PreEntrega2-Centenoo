@@ -88,7 +88,7 @@ header{
     border-top: 2px solid white;
     // Footer abajo
     position: fixed;
-    left: 0p;
+    left: 0;
     bottom: 0;
     width: 100%;
 }
@@ -108,11 +108,11 @@ img{
 /*Mq*/
 @media screen and (max-width: 650px) {
     .about{
-
-    } .content{
-        img{
-            margin-bottom: 35px;
-          }
+        .content{
+            img{
+                margin-bottom: 35px;
+              }
+    } 
     } 
     .text{
         h1{
