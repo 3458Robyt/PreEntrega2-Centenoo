@@ -1,8 +1,20 @@
 // Linea de comentario
 /*Comentario en sass y css*/
+@import "html/aboutus";
+@import "html/SignLogin";
+@import "html/index";
+@import "html/contact";
+@import "variables/vars";
 
 // nesting
-// Estilos generales del header
+/*Estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+/*Estilos generales del header*/
 header{
     position: fixed;
     top: 0;
@@ -14,27 +26,41 @@ header{
     padding: 30px 20px;
     z-index: 10;
     background-color: white;
-
+}
+header{
     ul{
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-
+    }
+}
+header{
+    ul{
         li{
             list-style: none;
             transition: all .3s ease;
+        }
+    }
+}
 
-            :hover{
-                transform: scale(1.4);
-
-            }
+header{
+    ul{
+        li:hover{
+        transform: scale(1.4);
+        background-color: rgb(195, 195, 195);
+        }
+    }
+}
+header{
+    ul{
+        li{
             a{
                 position: relative;
                 margin: 0 11vh;
                 font-size: 4.5mm;
                 text-decoration: none;
-                color: black;
+                color: rgb(0, 0, 0);
                 letter-spacing: 2px;
                 font-weight: 600;
                 transition: 0.7s;
@@ -42,7 +68,20 @@ header{
         }
     }
 }
-// Estilos genearles de footer 
+/*Propiedades del nombre*/
+header{
+    .logo{
+        position: relative;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 12mm;
+        letter-spacing: 1px;
+        transition: 1.5s;
+        text-align: left;
+    }
+}
+/*Estilos genearles de footer */
 .footer{
     background: white;
     height: 30px;
@@ -53,3 +92,32 @@ header{
     bottom: 0;
     width: 100%;
 }
+/*Estilos a h1,h2,h3*/
+a{
+    text-decoration: none !important;
+}
+h1,h2,h3{
+    font-family: 'Kaushan Script',cursive;
+}
+/*Propiedad de las imagenes*/
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*Mq*/
+@media screen and (max-width: 650px) {
+    .about{
+
+    } .content{
+        img{
+            margin-bottom: 35px;
+          }
+    } 
+    .text{
+        h1{
+            font-size: 60px;
+            margin-bottom: 25px;
+          }
+    } 
+    }

@@ -1,4 +1,156 @@
 /*Comentario en sass y css*/
+/*About us*/
+.about {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.about .content img {
+  height: auto;
+  width: 600px;
+  max-width: 100%; }
+
+.text {
+  width: 550px;
+  max-width: 100%;
+  padding: 0 10px; }
+
+.content {
+  width: 1280px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around; }
+
+.text h1 {
+  color: black;
+  font-size: 85px;
+  margin-bottom: 20px;
+  text-transform: capitalize; }
+
+.text h5 {
+  color: gray;
+  font-size: 25px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  letter-spacing: 2px; }
+
+.text p {
+  color: rgba(137, 137, 137, 0.847);
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 45px; }
+
+/*form inicio de sesion*/
+.container {
+  padding-top: 4.2rem;
+  padding-bottom: 4.2rem;
+  background: rgba(255, 255, 255, 0.76); }
+
+.user {
+  padding-top: 4.2rem;
+  padding-bottom: 4.2rem;
+  background: white; }
+
+.myform {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: white;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2.1rem;
+  outline: 0;
+  max-width: 500px; }
+
+.tx-tfm {
+  text-transform: uppercase; }
+
+.mybtn {
+  border-radius: 50px; }
+
+.login-or {
+  position: relative;
+  color: white;
+  margin: 20px 20px 20px 20px; }
+
+.span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center; }
+
+.hr-or {
+  height: 1px;
+  margin-top: 0px !important; }
+
+.google {
+  color: #666;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  border: 1px solid lightgrey; }
+
+form .error {
+  color: #ff0000; }
+
+.form-group {
+  padding: 1vh;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px; }
+
+/* Grilla menu principal */
+.container-imagenes {
+  grid-template-columns: repeat(1, 1fr); }
+
+/*Contact us*/
+.contact {
+  margin-top: 150px;
+  margin-left: 50px; }
+  .contact h2 {
+    font-size: 35px;
+    color: gray; }
+  .contact h3, .contact h4 {
+    font-size: 20px;
+    color: gray; }
+
+/*mapa*/
+.map {
+  width: 75vw;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 35px;
+  background-color: white;
+  box-shadow: #8e8b8b 0 6px 15px; }
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none; }
+
+/*Estilos generales*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat Alternates', sans-serif; }
+
+/*Estilos generales del header*/
 header {
   position: fixed;
   top: 0;
@@ -10,26 +162,43 @@ header {
   padding: 30px 20px;
   z-index: 10;
   background-color: white; }
-  header ul {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    header ul li {
-      list-style: none;
-      transition: all .3s ease; }
-      header ul li :hover {
-        transform: scale(1.4); }
-      header ul li a {
-        position: relative;
-        margin: 0 11vh;
-        font-size: 4.5mm;
-        text-decoration: none;
-        color: black;
-        letter-spacing: 2px;
-        font-weight: 600;
-        transition: 0.7s; }
 
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+header ul li {
+  list-style: none;
+  transition: all .3s ease; }
+
+header ul li:hover {
+  transform: scale(1.4);
+  background-color: #c3c3c3; }
+
+header ul li a {
+  position: relative;
+  margin: 0 11vh;
+  font-size: 4.5mm;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.7s; }
+
+/*Propiedades del nombre*/
+header .logo {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12mm;
+  letter-spacing: 1px;
+  transition: 1.5s;
+  text-align: left; }
+
+/*Estilos genearles de footer */
 .footer {
   background: white;
   height: 30px;
@@ -38,3 +207,24 @@ header {
   left: 0p;
   bottom: 0;
   width: 100%; }
+
+/*Estilos a h1,h2,h3*/
+a {
+  text-decoration: none !important; }
+
+h1, h2, h3 {
+  font-family: 'Kaushan Script',cursive; }
+
+/*Propiedad de las imagenes*/
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+/*Mq*/
+@media screen and (max-width: 650px) {
+  .content img {
+    margin-bottom: 35px; }
+  .text h1 {
+    font-size: 60px;
+    margin-bottom: 25px; } }

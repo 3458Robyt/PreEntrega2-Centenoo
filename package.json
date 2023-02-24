@@ -1,7 +1,7 @@
 {
   "name": "preentrega2-centeno-main",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina con tematica de muebles con estilo minimalista, tratando de adapatar este estilo tambien a la web",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/3458Robyt/PreEntrega2-Centenoo#readme",
   "devDependencies": {
     "node-sass": "^8.0.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "bootstrap": "^5.2.3"
   }
 }

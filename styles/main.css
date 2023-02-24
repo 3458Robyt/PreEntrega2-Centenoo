@@ -91,7 +91,7 @@ header .logo{
   }
 }
 
-/*Propiedad de las imagenes*/
+
 
 img{
     width: 100%;
@@ -101,7 +101,7 @@ img{
 
 
 
-/*Contact us*/
+
 .contact{ 
     margin-top: 150px;
     margin-left: 50px;
@@ -246,7 +246,6 @@ max-width: 500px;
      .login-or {
      position: relative;
      color: #aaa;
-     /*  */
      margin-top: 20px;
      margin-bottom: 20px;
      padding-top: 20px;
