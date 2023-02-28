@@ -6,34 +6,24 @@
 @import "html/contact";
 @import "utilities/vars";
 @import "utilities/maps";
+@import "utilities/mixin";
 
 // nesting
 /*Estilos generales*/
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat Alternates', sans-serif;
+    @include reset
 
 }
 /*Estilos generales del header*/
 header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    transition: 0.7s;
-    padding: 30px 20px;
-    z-index: 10;
-    background-color: white;
+    @include footer
 }
 header{
     ul{
         position: relative;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: $centrar;
+        align-items: $centrar;
     }
 }
 header{
@@ -49,7 +39,7 @@ header{
     ul{
         li:hover{
         transform: scale(1.4);
-        background-color: rgb(195, 195, 195);
+        background-color: $color-header-hover;
         }
     }
 }
@@ -72,14 +62,7 @@ header{
 /*Propiedades del nombre*/
 header{
     .logo{
-        position: relative;
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 12mm;
-        letter-spacing: 1px;
-        transition: 1.5s;
-        text-align: left;
+        @include logo
     }
 }
 /*Estilos genearles de footer */
@@ -91,7 +74,7 @@ header{
     position: fixed;
     left: 0;
     bottom: 0;
-    width:  map-get($footer , widthf );
+    width:  map-get($footer , widthf);
 }
 /*Estilos a h1,h2,h3*/
 a{
@@ -102,8 +85,7 @@ h1,h2,h3{
 }
 /*Propiedad de las imagenes*/
 img{
-    width: 100%;
-    height: 100%;
+    @include medidas
     object-fit: cover;
 }
 /*Mq*/
@@ -147,7 +129,7 @@ img{
         flex-direction: column;
         width: 100%;
         pointer-events: auto;
-        background-color: white;
+        background-color: map-get($footer, color-backgroundf );
         background-clip: padding-box;
         border: 1px solid black;
         border-radius: 2.1rem;
