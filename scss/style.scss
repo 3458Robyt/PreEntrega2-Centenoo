@@ -4,7 +4,8 @@
 @import "html/SignLogin";
 @import "html/index";
 @import "html/contact";
-@import "variables/vars";
+@import "utilities/vars";
+@import "utilities/maps";
 
 // nesting
 /*Estilos generales*/
@@ -83,14 +84,14 @@ header{
 }
 /*Estilos genearles de footer */
 .footer{
-    background: white;
-    height: 30px;
+    background: map-get($footer, color-backgroundf);
+    height: map-get($footer , heightf);
     border-top: 2px solid white;
     // Footer abajo
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width:  map-get($footer , widthf );
 }
 /*Estilos a h1,h2,h3*/
 a{
@@ -133,4 +134,22 @@ img{
         width: 300px;
         
       }
+    }
+
+
+    // 
+    .myform{
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 1rem;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: white;
+        background-clip: padding-box;
+        border: 1px solid black;
+        border-radius: 2.1rem;
+        max-width: 500px;
     }

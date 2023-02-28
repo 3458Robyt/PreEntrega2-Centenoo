@@ -241,3 +241,18 @@ img {
     grid-template-columns: repeat(1, 1fr); }
   .map {
     width: 300px; } }
+
+.myform {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: white;
+  background-clip: padding-box;
+  border: 1px solid black;
+  border-radius: 2.1rem;
+  max-width: 500px; }
