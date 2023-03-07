@@ -4,11 +4,11 @@
 /*form inicio de sesion*/
 
 .container{
-    @include paddingsign
+    @include paddingsign;
     background: rgba(255, 255, 255, 0.76);
 }
-.user{
-    @include paddingsign
+.userl{
+    @include paddingsign;
     background: map-get($footer, color-backgroundf);
 }
 
@@ -71,3 +71,8 @@ form{
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
 }
+#submitbutton{
+    letter-spacing: 2px;
+    background-color: white;
+}
+
