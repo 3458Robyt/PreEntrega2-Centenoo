@@ -17,6 +17,7 @@
 /*Estilos generales del header*/
 header{
     @include footer
+
 }
 header{
     ul{
@@ -49,22 +50,40 @@ header{
             a{
                 position: relative;
                 margin: 0 11vh;
-                font-size: 4.5mm;
+                font-size: 1mm;
                 text-decoration: none;
                 color: rgb(0, 0, 0);
                 letter-spacing: 2px;
                 font-weight: 600;
                 transition: 0.7s;
+
+            
             }
         }
     }
 }
 /*Propiedades del nombre*/
 header{
-    .logo{
-        @include logo
+    .logo2{
+        transform: translate(-50%);
+        position: relative;
+        text-decoration: none;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 600;
+        left: -28.5%;
+        font-size: 30px;
     }
 }
+
+#logoo{
+    img{
+       width: 100px;
+       height: 100px; 
+    }
+}
+
+
 /*Estilos genearles de footer */
 .footer{
     background: map-get($footer, color-backgroundf);
